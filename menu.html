@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        a.food_options:hover {
+
+            background-color: red;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: black;">
+        <div class="container-fluid">
+            <img class="ms-3" src="images/logo-removebg-preview (2).png" style="height: 90px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="font-size:24px; color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2  mb-lg-0" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link active ms-3" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="about_us.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark" href="menu.html">Food Varieties</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="contect_us.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <i class="fa fa-facebook-f ms-2" style="font-size:24px;color: white;"></i>
+                    <i class="fa fa-shopping-cart ms-4 me-4" style="font-size:24px;color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="search input-group my-3 container-fluid-md mx-auto w-50">
+        <input type="search" class="form-control" placeholder="Search here" aria-label="search"
+            aria-describedby="button-addon1">
+        <button class="btn bg-warning bg-gradient" type="button" id="button-addon1"><i style="font-size:24px"
+                class="text-center fa text-dark">&#xf002;</i></button>
+    </div>
+
+    <div class="container">
+        <div class=" row ">
+            <div class="col-sm-2"><a href="#starters" class="btn food_options text-white px-4 menu-option" style="font-size:1.2rem;">
+                    Starters
+                </a></div>
+            <div class="col-sm-2"><a href="#rice" class="btn food_options text-white px-4  menu-option" style="font-size:1.2rem;">
+                    Rice
+                </a>
+            </div>
+            <div class="col-sm-2"><a href="#soup" class="btn food_options text-white px-4  menu-option" style="font-size:1.2rem;">
+                    Soup</a>
+            </div>
+            <div class="col-sm-2"><a href="#noddles" class="btn food_options text-white px-4 menu-option"
+                    style="font-size:1.2rem;">Noddles</a></div>
+            <div class="col-sm-2"><a href="#chicken" class="btn food_options text-white px-4  menu-option"
+                    style="font-size:1.2rem;">Chicken</a></div>
+            <div class="col-sm-2"><a href="#beef" class="btn food_options text-white px-4  menu-option"
+                    style="font-size:1.2rem;">Beef</a>
+            </div>
+        </div>
+
+        <br>
+    </div>
+    <hr>
+
+    <div id="starters" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="images/starters/starter-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dynamite Prawns (10 Pcs)</h5>
+                    <p class="card-text">Rs: 2999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/starters/Spring-Rolls-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Spring Rolls</h5>
+                    <p class="card-text">Rs: 899</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/starters/Fried-wontons-1-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fried wontons</h5>
+                    <p class="card-text">Rs: 999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/starters/Fried-fish-1-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fried fish</h5>
+                    <p class="card-text">Rs: 1999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="rice" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+
+                <img src="images/rice/Chicken-Fried-Rice-With-Chilli-And-Basil-433x237.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Fried Rice</h5>
+                    <p class="card-text">Rs:1099</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/rice/Flavoured-rice-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Flavoured rice</h5>
+                    <p class="card-text">Rs:1099</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/rice/Rice-bowl-chicken-1-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rice Bowl Chicken</h5>
+                    <p class="card-text">Rs: 1299</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/rice/Vegetable-Fried-Rice-With-Chilli-And-Basil-433x237.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetable Fried Rice</h5>
+                    <p class="card-text">Rs: 999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div id="soup" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="images/soup/Chicken-Vegetable-Soup-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Vegetable Soup</h5>
+                    <p class="card-text">Rs: 899</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/soup/Hot-Sour-Soup-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hot Sour Soup</h5>
+                    <p class="card-text">Rs: 999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/soup/Szechuan-soup-1-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Szechuan Soup</h5>
+                    <p class="card-text">Rs: 1099</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/soup/Wonton-Soup-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wonton Soup</h5>
+                    <p class="card-text">Rs: 1499</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="noodles" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="images/noodles/Red-Curry-Noodles-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Red Curry Noodles</h5>
+                    <p class="card-text">Rs: 999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/noodles/Green-Curry-Noodles-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Green Curry Noodles</h5>
+                    <p class="card-text">RS: 999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/noodles/Stir-Fried-Rice-Noodles-With-Beef-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Stir Beef Fried Rice Noodles</h5>
+                    <p class="card-text">Rs: 1499</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/noodles/Vegetable-Chowmein-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetable Chowmein</h5>
+                    <p class="card-text">Rs: 999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="chicken" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="images/chicken/Kindo-chicken-1-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kindo chicken</h5>
+                    <p class="card-text">Rs: 2099</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/chicken/Chicken-American-Chopsuey-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken American Chopsuey</h5>
+                    <p class="card-text">Rs: 1999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/chicken/Pineapple-Chicken-Dry-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pineapple Chicken Dry</h5>
+                    <p class="card-text">Rs: 2599</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/chicken/Dragon-Chicken-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dragon Chicken</h5>
+                    <p class="card-text">Rs: 3099</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="beef" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="images/beef/Honey-spicy-chicken-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Honey spicy Beef</h5>
+                    <p class="card-text">Rs: 3499</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/beef/Beef-With-Oyster-Sauce-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Beef With Oyster Sauce</h5>
+                    <p class="card-text">Rs: 2599</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/beef/Beijing-Beef-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Beijing Beef</h5>
+                    <p class="card-text">Rs: 2699</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="images/beef/Crispy-beef-433x237.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crispy beef</h5>
+                    <p class="card-text">Rs: 2999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="mx-auto" style="width:10%"><button
+            class="btn btn-danger text-center text-white rounded-pill py-2 px-4 bolder">Learn More</button></div>
+    <h5 class="pt-5 text-center text-white bolder">Please select above filter to view dishes from other category</h5>
+
+    <br><br> <br>
+
+    <!-- footer -->
+
+    <footer class="container-fluid hero-footer m-0 w-100  " style="background-color: rgb(184 ,5 ,5);">
+        <div class="container-fluid" style="background-color: rgb(184 ,5 ,5);">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-sm-6  align-self-sm-center col-lg-4 pb-1">
+                        <img src="images/logo.jpg" style="height: 90px ;">
+                    </div>
+                    <div class="col-sm-6  col-lg-4 text-white" style="font-weight: bold;">
+                        <ul class="list-unstyled">
+                            <li class="h5 pb-2">QUICK LINKS</li>
+                            <li class="pb-1">Order Tracking</li>
+                            <li class="pb-1">Terms & Conditions</li>
+                            <li class="pb-1">Shipping Policy</li>
+                            <li class="pb-1">Refund Policy</li>
+                            <li class="pb-1">Privacy Security Policies</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6  col-lg-4 text-white" style="font-weight: bold;">
+                        <ul class="list-unstyled">
+                            <li class="pb-1"><img src="images/call.png" class="img-fluid" alt=""> Delivery: 0300-2734680
+                            </li>
+                            <li class="pb-1"><img src="images/clock-img.png" class="img-fluuid" alt="">
+                                Timings: 03:30 pm – 11:45 pm </li>
+                            <li><img src="images/order.png" class="img-fluid" alt="">
+                                Min. Order: Rs.00*</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="container-fluid text-center py-sm-3 text-white" style="height: 55px; background-color: rgb(139, 2, 2);">
+        Copyright © 2024 Dragon Hunger Express All Rights
+        Reserved.</div>
+</body>
+
+</html>
